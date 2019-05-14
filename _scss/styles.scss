@@ -65,3 +65,40 @@ body {
     }
   }
 }
+
+.services {
+  padding: 30px;
+
+  @include media-breakpoint-up(md) {
+    padding: 70px;
+  }
+
+  .top-hr {
+    background: lighten($gray, 50%);
+    margin-left: 0;
+
+    @include media-breakpoint-up(sm) {
+      width: 50%;
+    }
+
+    @include media-breakpoint-up(md) {
+      width: 20%;
+    }
+  }
+
+  .nav-tabs {
+    border-bottom: none;
+  }
+
+  .btn {
+    width: 100%;
+
+    hr {
+      border-style: dashed;
+    }
+
+    .price {
+      font-weight: 300;
+    }
+  }
+}
