@@ -1,6 +1,6 @@
 // Bootstrap
 @import 'bootstrap/bootstrap.scss';
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,800');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,800');
 
 $gray: #767474;
 
@@ -14,8 +14,17 @@ body {
   color: $gray !important;
 }
 
+.navbar-toggler {
+  border: none;
+}
+
 .text-darker {
   color: #535353;
+}
+
+.text-lighter {
+  color: #b1aeae;
+  font-weight: 300;
 }
 
 .text-bolder {
@@ -23,11 +32,21 @@ body {
 }
 
 .hero {
+  background: #f2f2f2;
   margin-top: 56px;
-  padding: 90px;
+  padding: 30px;
+  border-bottom: 1px solid #e5e5e5;
+
+  @include media-breakpoint-up(md) {
+    padding: 70px;
+  }
 
   h1 {
-    font-size: 60px;
+    font-size: 3em;
+
+    @include media-breakpoint-up(md) {
+      font-size: 5em;
+    }
   }
 
   h3 {
