@@ -1,0 +1,64 @@
+{
+  "name": "DeborahHolistics",
+  "version": "1.0.0",
+  "description": "Jeykll project to maintain all the landing pages and assets. Use Ruby 2.3.0.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "setup": "npm install -g gulp-cli && npm install && gem install bundler && bundle install",
+    "dev": "gulp server",
+    "force": "gulp javascripts --force && gulp stylesheets --force && jekyll build",
+    "upgrade": "npm install -g npm-check-updates && npm-check-updates -u && npm install && gem install bundler && bundle update",
+    "crunch": "gulp optimize_images"
+  },
+  "author": "Eli Nathan",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.0.1",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.24.6",
+    "browserify": "*",
+    "eslint-config-airbnb-relaxed": "^0.2.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "*",
+    "gulp-buffer": "*",
+    "gulp-changed": "*",
+    "gulp-debug": "*",
+    "gulp-front-matter": "*",
+    "gulp-if": "*",
+    "gulp-imagemin": "*",
+    "gulp-newer": "*",
+    "gulp-no-media-queries": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-tap": "*",
+    "gulp-uglify": "*",
+    "liquid-node": "*",
+    "gulp4-run-sequence": "*",
+    "jquery": "^3.3.1",
+    "vinyl-buffer": "*",
+    "yargs": "*"
+  },
+  "keywords": [
+    "jekyll",
+    "gulp",
+    "sass",
+    "browsersync"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "gulp-mamp": "0.0.5",
+    "popper.js": "^1.14.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "server": "^1.0.18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Eli-Nathan/deborahholistics/"
+  }
+}

@@ -1,0 +1,48 @@
+// Bootstrap
+@import 'bootstrap/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,800');
+
+$gray: #767474;
+
+body {
+  font-family: 'Lato', Roboto, Verdana;
+  color: $gray;
+  font-weight: 400;
+}
+
+.navbar-brand {
+  color: $gray !important;
+}
+
+.text-darker {
+  color: #535353;
+}
+
+.text-bolder {
+  font-weight: 800;
+}
+
+.hero {
+  margin-top: 56px;
+  padding: 90px;
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h3 {
+    margin-top: 24px;
+  }
+
+  hr {
+    background: lighten($gray, 50%);
+
+    @include media-breakpoint-up(sm) {
+      width: 50%;
+    }
+
+    @include media-breakpoint-up(md) {
+      width: 20%;
+    }
+  }
+}

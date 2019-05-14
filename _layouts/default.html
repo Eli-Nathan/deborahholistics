@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="no-js">
+
+<head>
+	<meta charset="utf-8">
+	<title>{{ page.title }} | Holistic Therapies, Huddersfield</title>
+	<meta name="description" content="{% if page.meta_description %}{{ page.meta_description }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="/favicon.ico?v=2">
+	<link rel="canonical" href="https://deborahholistics.co.uk/{{page.url}}">
+	<link rel="stylesheet" href="/assets/css/styles.css">
+	{% include tag-manager.html %}
+</head>
+
+<body>
+	
+	{% include header.html %}
+
+	{{ content }}
+
+	{% include footer.html %}
+
+	{% include scripts.html %}
+
+</body>
+
+</html>
