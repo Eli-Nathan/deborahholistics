@@ -1,13 +1,22 @@
 // Bootstrap
 @import 'bootstrap/bootstrap.scss';
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,800');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,700');
 
 $gray: #767474;
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: 'Lato', Roboto, Verdana;
   color: $gray;
   font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', Roboto, Verdana;
+  font-weight: 700;
 }
 
 .navbar-brand {
@@ -28,7 +37,13 @@ body {
 }
 
 .text-bolder {
-  font-weight: 800;
+  font-weight: 900;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 24px;
 }
 
 .hero {
@@ -92,6 +107,13 @@ body {
 
   .btn {
     width: 100%;
+    background-color: #f2f2f2;
+    border: 1px solid #e5e5e5;
+    border-bottom-width: 2px;
+
+    &:hover {
+      border-bottom-color: #979797;
+    }
 
     hr {
       border-style: dashed;
@@ -100,5 +122,62 @@ body {
     .price {
       font-weight: 300;
     }
+  }
+}
+
+.about {
+  background: #f2f2f2;
+  padding: 30px;
+
+  @include media-breakpoint-up(md) {
+    padding: 70px;
+  }
+
+  .flex {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+    }
+
+    @include media-breakpoint-down(sm) {
+      .first-col {
+        order: 2;
+      }
+  
+      .second-col {
+        order: 1;
+      }
+    }
+  }
+}
+
+.testimonials {
+  padding: 30px;
+
+  @include media-breakpoint-up(md) {
+    padding: 70px;
+  }
+
+  .carousel-control-next, .carousel-control-prev {
+    color: red;
+  }
+  .carousel-inner {
+    min-height: 392px;
+
+    @include media-breakpoint-up(md) {
+      min-height: 224px;
+    }
+  }
+}
+
+.contact {
+  background: #f2f2f2;
+  padding: 30px;
+
+  @include media-breakpoint-up(md) {
+    padding: 70px;
   }
 }

@@ -5,6 +5,15 @@ var $ = require('jquery');
 
 var $ = require('bootstrap');
 
+document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
 },{"bootstrap":2,"jquery":3}],2:[function(require,module,exports){
 /*!
   * Bootstrap v4.3.1 (https://getbootstrap.com/)

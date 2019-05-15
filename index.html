@@ -4,7 +4,7 @@ title: Deborah Holistics
 meta_description: I am a holistic therapist based in Huddersfield, Yorkshire. Providing holistic therapies such as Reiki, Gua Sha and Access Consciousness Bars. Holistic Therapy - Huddersfield | Yorkshire
 current: home
 ---
-<div class="hero">
+<div class="hero" id="hero">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
@@ -41,7 +41,7 @@ current: home
       </div>
       <div class="col-md-7">
         <div class="tab-content mt-4 mt-md-0" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="reiki" role="tabpanel" aria-labelledby="reiki-tab">
+          <div class="tab-pane fade" id="reiki" role="tabpanel" aria-labelledby="reiki-tab">
             <h4 class="text-bolder">Reiki</h4>
             <p>Reiki is a Japanese technique for stress reduction and relaxation that also promotes healing. It is administered by "laying on hands" and is based on the idea that an unseen "life force energy" flows through us and is what causes us to
               be alive. If one's "life force energy" is low, then we are more likely to get sick or feel stress, and if it is high, we are more capable of being healthy.</p>
@@ -92,3 +92,90 @@ current: home
     </div>
   </div>
 </div>
+
+<div class="about" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="flex d-flex">
+          <div class="first-col col-sm-4 col-md-3">
+            <img src="/assets/images/deb.jpg" alt="Deborah Ho" class="img-fluid">
+          </div>
+          <div class="second-col col-sm-8 offset-md-2">
+            <h3 class="mt-4 mt-sm-0">About me</h3>
+            <p>I am a holistic therapist based in Huddersfield, Yorkshire. I have worked in care settings with older people, vulnerable adults and young people , those fleeing domestic abuse , taught in the performing arts industry, with special needs and with hard to reach young people for 17 years. I have a humanist approach to life and have realised a lifelong dream in becoming a holistic therapist. I offer a range of techniques and treatments to soothe, aid healing and promote relaxation. I am fully qualified, insured and a member of the federation of holistic therapists</p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h3 class="text-center">Kind words</h3>
+        <hr>
+        <div id="carouselContent" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active text-center p-4">
+              <p>"Debs is truly amazing!! She has a genuinely calming and reassuring nature which soothed my soul... the benefits of reiki continued to positively impact on my life in the week afterwards, offering me clarity and feelings of being grounded and balanced during an emotionally challenged episode of my life. As a result, I have now regained control of my life choices... feeling empowered and strong. Thank you Debs, you really are exceptional at what you do XxXxXx"</p>
+              <p>Sara</p>
+            </div>
+            <div class="carousel-item text-center p-4">
+              <p>"Just come back from a lovely massage. Deb gets all those knots and really personalises what you need; she does have magic hands. The room is calming and soothing too. I wouldn't go anywhere else. Happy customer!"</p>
+              <p>Janine</p>
+            </div>
+            <div class="carousel-item text-center p-4">
+              <p>"I was referred by a friend for a massage at deborahholistics when I visited the area on the weekend and I just had to leave a review! I must say it was one of the best massages I have ever had and Deb paid great detail to the aches andn pains I had. You made it a great experience for me, both relaxing and satisfying and I will definitely be booking again when I come back."</p>
+              <p>G.W</p>
+            </div>
+            <div class="carousel-item text-center p-4">
+              <p>"Thank you so much Deborah for my wonderful massage today, you are amazing! Your space is so calm, warm, clean and inviting, any apprehensions I had quickly disappeared. You were so kind, I felt incredibly treated and looked after throughout the whole process. The way you spoke to me, consulted with me, the scents and sounds added to such a positive experience. The massage was fantastic, it felt you got very deep into my muscles and made a real difference. I was so relaxed I could have laid there for ages! Thank you so much, I will be back soon"</p>
+              <p>S.W</p>
+            </div>
+            <div class="carousel-item text-center p-4">
+              <p>"I was so happy and excited to book in with Deb (by recommendation from my sister) for a reiki session...what can I say!?..it was marvellous! From start to finish the warm welcome was wonderful! The treatment room was calm and peaceful with an enveloping serenity. Reiki is so relaxing and like a massage for the soul! i came out feeling like a new woman, and like I was walking on air...plus i had the best nights sleep in ages! Looking forward to having lots more treatments with Deb in the future! Thank you so much! X" </p>
+              <p>Camilla</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="contact" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h3 class="text-center">Get in touch</h3>
+          <p class="text-center">Please either use the contact form below or my mobile number to get in touch or to make a booking: <a href="tel:07584062104">07584062104</a></p>
+          <hr>
+        </div>
+        <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2">
+          <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+            <p class="d-none">
+              <label>Bleep bloop: <input name="bot-field" /></label>
+            </p>
+            <div class="form-group">
+              <label for="name-field">Name</label>
+              <input type="text" class="form-control" id="name-field" name="name">
+            </div>
+            <div class="form-group">
+              <label for="email-field">Email address</label>
+              <input type="email" class="form-control" id="email-field" name="email">
+            </div>
+              <div class="form-group">
+                <label for="phone-field">Phone number</label>
+                <input type="email" class="form-control" id="phone-field" name="phone">
+              </div>
+              <div class="form-group">
+                <label for="message-field">Your message</label>
+                <textarea class="form-control" id="message-field" name="message" rows="10"></textarea>
+              </div>
+            <button type="submit" class="btn btn-secondary">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
